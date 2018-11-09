@@ -1,0 +1,107 @@
+baseURL: /
+languageCode: en-us
+title: Moar Fit
+theme: hugo-fresh
+
+params:
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    title: Moar Fit
+    subtitle: Helping you get a little bit fitter each day.
+    buttontext: Get started
+    buttonlink: "https://app.moar.fit/signup"
+    image: illustrations/worker.svg
+  navbar:
+  - title: Log in
+    url: https://app.moar.fit/login
+  - title: Sign up
+    url: https://app.moar.fit/signup
+    button: true
+  section1:
+    title: The Fitness Platform
+    subtitle: Connecting you to your fitness data
+    tiles:
+    - title: API Driven
+      icon: mouse-globe
+      text: Designed for easy integration into any number of services or devices.
+      url: https://developer.moar.fit/
+      buttonText: Developer Documentation
+    - title: Universally Available
+      icon: laptop-cloud
+      text: Available anywhere the web is
+      url: https://app.moar.fit/
+      buttonText: Get started
+    - title: Integrated
+      icon: plug-cloud
+      text: Integrated into a growing number of fitness devices.
+      url: https://developer.moar.fit/integrations/
+      buttonText: Discover More
+  section2:
+    title: You're here because you want the best
+    subtitle: We're passionate about delivering it.
+    features:
+    - title: Simple
+      text: We'll take care of the dull, boring parts of training and leave you to to build yourself into something great.
+      # Icon (from /images/illustrations/icons/___.svg)
+      icon: laptop-globe
+    - title: Data Driven
+      text: Our entire purpose is to make your fitness data useful to you. We take your training data together with others to make recommendations to improve your fitness.
+      icon: doc-sync
+    - title: Quiet
+      text: Our job is to be in your corner and let you lead your own fitness. We'll stay out the way as much as possible, stepping in only when we can provide something useful for you journey.
+      icon: mobile-feed
+  section3:
+    title: One platform
+    subtitle: To bind them all
+    image: illustrations/mockups/app-mockup.png
+    buttonText: Get started
+    buttonLink: "https://app.moar.fit/signup"
+  section4:
+    title: Join us
+    subtitle: We're still in active development but if you're keen, leave your email to stay in touch!
+  footer:
+    # Logo (from /images/logos/___)
+    logo: fresh-white-alt.svg
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+    - link: https://github.com/lucperkins/github-fresh
+      # Icons are from Font Awesome
+      icon: github
+    - link: https://dribbble.com/#
+      icon: dribbble
+    - link: https://facebook.com/#
+      icon: facebook
+    - link: https://twitter.com/lucperkins
+      icon: twitter
+    - link: https://bitbucket.org/#
+      icon: bitbucket
+    bulmalogo: true
+    product:
+    - text: Discover features
+      link: /
+    - text: Why choose our product?
+      link: /
+    - text: Compare features
+      link: /
+    - text: Our roadmap
+      link: /
+    - text: Request features
+      link: /
+    docs:
+    - text: Get started
+      link: /
+    - text: User guides
+      link: /
+    - text: Admin guide
+      link: /
+    - text: Developers
+      link: /
+    blogroll:
+    - text: Latest news
+      link: /
+    - text: Tech articles
+      link: /
+    - text: Video blog
+      link: /
