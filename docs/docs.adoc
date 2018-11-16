@@ -1,0 +1,39 @@
+= Docs
+
+Documentation is perhaps the most important part of the moar.fit project.
+
+It is the canonical way of proposing any changes to:
+
+- Software design
+- Business design
+- Personnel decisions
+- Anything else
+
+Changes are made via:
+
+1. Locating the appropriate documentation
+2. Modifying the documentation
+3. Modifying that documentation on a separate `git` branch
+4. Creating a pull request against the `master` branch
+
+== Where to find documentation
+
+Documentation for this service is in several places, designed to make it as easy as possible to maintain and discover.
+
+.Table Where to find information
+|===
+| Type | Source | Display
+
+| Business Information
+| Within this repository in `${GIT_ROOT}/docs/business`
+| Within the GitHub reviewer
+
+| API Documentation
+| https://github.com/moarfit/dev.moar.fit[The dev.moar.fit repository]
+| https://dev.moar.fit/[dev.moar.fit]
+|===
+
+== Format
+
+Documentation is generally written in AsciiDoc format. To read the documentation open the file with an appropriate
+reader,or render the documentation with the https://asciidoctor.org/[AsciiDoc] or compatible tooling.
