@@ -102,3 +102,16 @@ clients are expected to supply events in an extremely strict, standardized forma
 on.
 
 That allows the server to internally treat user data as equal, no matter the source that the user data has come from.
+
+== Timeline
+
+This goal of this entity is to be around indefinitely. However it's invariably difficult to forsee how long any
+business entity will last.
+
+Practically, the business is designed to be around for at least 5 years beyond the current date, at whatever date
+this happens to be read. All business, technical, personal, design or promotional decisions should be considered
+over that timescale.
+
+Specifically, the business is not designed to be sold. Should the business grow and become successful, the business
+should remain in the control of the primary stakeholders but may be delegated to parent companies within
+stakeholder control.
