@@ -1,0 +1,28 @@
+= Resources
+
+This document describes the capacities that the moar.fit team can build on to develop and release new services. 
+
+Resources is an inherently broad term, but can be broken down into constituent groups "Physical", "Intellectual",
+"Human", "Financial".
+
+This document has been written based on the https://en.wikipedia.org/wiki/Business_Model_Canvas["business model canvas"]
+
+== Intellectual
+
+The principle value of the moar.fit entity is within the intellectual capacities of its team to see, understand and
+provide solutions to its customers needs.
+
+Within that, the team has specialist expertise in:
+
+=== Software Development
+
+The moar.fit platform being planned as a software service the primary requirement is for engineers who are interested
+in helping improve peoples fitness. We have a limited number of those engineers.
+
+=== Physical training
+
+There are members of the team who have a 4 - 5 year background in the physical training of users.
+
+== Physical
+
+Physical assets should be tracked and logged in the https://assets.corp.moarfit.com[physical asset registry.]
