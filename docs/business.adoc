@@ -1,0 +1,117 @@
+= Business
+
+Business documentation describes the organisational aspect of the project.
+
+This includes topics such as:
+
+- What the problem the business is designed to solve is
+- The solution that moar.fit proposes
+- Who the project stakeholders are
+
+== Problem Statement
+
+The goal for this business is to help its consumers:
+
+- Understand their fitness
+- Improve their fitness
+
+== Solution Outline
+
+The way in which moar.fit is currently planning to help its consumers with these goals is to provide those consumers
+with:
+
+1. A way to submit data about their capabilities
+2. A way to plan interventions that improve to their capabilities over time
+3. Recommendations for adjustments to existing interventions, or new interventions
+
+The current solution design is to provide a platform that stores and makes recommendations, heavily disconnected from
+the implementation of tools to implement this platform:
+
+[ditaa]
+....
+
+                                                          +------+
+                                                                 |
+                                                                 |
+                                                                 |
++------------------------------------------------------------+   |
+|                                                            |   |
+|                   MoarFit Service Layer                    |   +--+  Proprietary
+|                                                            |   |      (Billable)
++---------------------------^--+-----------------------------+   |
+                            |  |                                 |
+                            |  |                                 |
+                        +---+--v----+                            |
+                        |           |                      +-----+
+                        |    API    |
+                        |  Gateway  |
+                        |           |
+                        +-----+-----+
+                              |
+                             gRPC
+                              or                          +-------+
+                             REST                                 |
+                              |                                   |
+     +---------------+--------+----------+--------------+         |
+     |               |                   |              |         |
++----+----+     +----+----+         +----+----+    +----+----+    |
+|         |     |         |         |         |    |         |    |
+|   Web   |     | Android |         |  Smart  |    |   ?!    |    +---+  Open Source
+|   App   |     |   App   |         |  Watch  |    |         |    |
+|         |     |         |         |         |    |         |    |
++---------+     +---------+         +---------+    +---------+    |
+                                                                  |
+                                                                  |
+                                                         +--------+
+....
+
+The platform is broken down into a "client side" and a "server side" implementation, delimited by an API gateway
+
+=== "Server Side"
+
+The server side implementation is designed to expose primitives on which client applications can be built. Some example
+primitives may include:
+
+- https://schema.org/Person["Person"]: An individual or entity
+- *AnthropomorphicMeasurement*: A measurement of a given property of a person; height, weight, etc 
+- *FitnessTest*: The result of a standardised process of benchmarking fitness
+- *StrengthExercise*: An exercise designed to increase strength
+- *CardioExercise*: An exercise designed to increase cardiovascular capacity
+- *SportsEvent*: An event in which a *Person* undertakes a sporting activity
+
+The server side component deals only in API primitives, and does no expressing of the primitives into a user interface
+for the user.
+
+The design goal of the server is to be able to express in a logical concept over a network API a set of primitives that
+express the properties of tracking state of fitness and the process of improving that state.
+
+=== "Client Side"
+
+The client side is an implementation of the primitives on the server side in some way in which it's easy for customers
+to understand and express their own fitness or measurements in the way that the server expects. There is no
+requirements on the type of client side application; only on the specific primitives it implements.
+
+The client side applications published by moar.fit should be open source, and implementations by third parties should
+freely be developed. The principle point at which this organisation is monetized is at the API gateway, rather than
+for the client implementations.
+
+=== "Api Gateway"
+
+The API gateway is the translation of the primitives that the "server side" expects from the client side. Broadly, the
+clients are expected to supply events in an extremely strict, standardized format that the server can store and operate
+on.
+
+That allows the server to internally treat user data as equal, no matter the source that the user data has come from.
+
+== Timeline
+
+This goal of this entity is to be around indefinitely. However it's invariably difficult to forsee how long any
+business entity will last.
+
+Practically, the business is designed to be around for at least 5 years beyond the current date, at whatever date
+this happens to be read. All business, technical, personal, design or promotional decisions should be considered
+over that timescale.
+
+Specifically, the business is not designed to be sold. Should the business grow and become successful, the business
+should remain in the control of the primary stakeholders but may be delegated to parent companies within
+stakeholder control.
