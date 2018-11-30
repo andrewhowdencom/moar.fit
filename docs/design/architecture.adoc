@@ -1,0 +1,23 @@
+= Architecture
+
+== Languages
+
+Languages are limited to the set of people who can implement them.
+Broadly, there are no language restrictions however please moderate
+language choice on how many colleagues are also familiar with that
+language.
+
+* Python
+* Golang
+
+== Server architecture
+
+Micro-service architecture. All applications should communicate only via
+API. Internally, that API is driven by gRPC / Protobuf. Communication
+via the outside world is by an API gateway exposes a limited set of
+calls via both gRPC and application/json.
+
+== Client Architecture
+
+Any client side framework is fine, but for the prototype something like
+Angular JS would seem appropriate.
