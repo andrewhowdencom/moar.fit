@@ -1,0 +1,50 @@
+= Clients
+
+The moar.fit platform is broken down into either a "client" application, or the "server" side platform. This document
+the creation and support of clients.
+
+== Design
+
+Data Required.
+
+== Supported Clients
+
+Supported clients are those maintained by moar.fit itself and served to users directly.
+
+All clients should support (at minimum) the following:
+
+- _White Labelling_
+- Multiple Languages
+
+=== Gymnasium Application
+
+The Gymnasium application is designed for gymnasium coaches to:
+
+- Record the anthropometric measurements of their athletes
+- Describe programs that those athletes should follow for a given period of time
+
+It should be accessible via web app at https://coach.app.more.fit/[coach.app.more.fit].
+
+=== Progressive Web Application
+
+The progressive web application should be available at https://app.more.fit[app.more.fit], and is the primary way
+consumers are expected to interact with the platform.
+
+It should expose the following features of the API:
+
+- Billing
+- Personal detail management
+- Delegation of access to a third party
+- Strength Training
+- Cardio Training
+- Anthropometric Measurements
+- Program Design
+- Goal Management
+
+== Third Party Clients
+
+Third party clients should be supported to exactly the same standard as the clients developed by the organisation.
+This means that:
+
+- The only API documentation for the organisational teams should be the same as deployed by the third parties
+- The organisational teams should use the same support, ticket management and other tooling as the third parties
